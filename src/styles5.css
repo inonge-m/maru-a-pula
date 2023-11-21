@@ -1,0 +1,12 @@
+h1 {
+  color: rgb(78, 158, 158);
+}
+h2,
+h3,
+h4 {
+  color: grey;
+}
+.row {
+  font-size: 16px;
+  color: green;
+}

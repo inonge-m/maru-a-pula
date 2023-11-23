@@ -1,8 +1,6 @@
-h1 {
-  color: rgb(78, 158, 158);
-}
 body {
   background-color: #f9f7fe;
+  font-family: "Times New Roman", Times, serif;
 }
 .weather-app {
   background: white;
@@ -26,7 +24,7 @@ header {
 }
 
 .search-button {
-  background: rgb(115, 194, 194);
+  background: rgb(78, 105, 105);
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -42,19 +40,20 @@ main {
   justify-content: space-between;
 }
 .current-city {
+  color: rgb(78, 158, 158);
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
 
-.current-date {
+.current-details {
   font-size: 16px;
   color: grey;
   line-height: 24px;
   font-weight: 500;
 }
 
-.current-date strong {
+.current-details strong {
   color: #77ebc4;
 }
 
@@ -67,7 +66,7 @@ main {
   margin-top: 22px;
 }
 
-.current-details {
+.current-date {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;

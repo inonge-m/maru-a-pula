@@ -46,14 +46,14 @@ main {
   line-height: 48px;
 }
 
-.current-details {
+.current-date {
   font-size: 16px;
   color: grey;
   line-height: 24px;
   font-weight: 500;
 }
 
-.current-details strong {
+.current-date strong {
   color: #77ebc4;
 }
 
@@ -66,7 +66,7 @@ main {
   margin-top: 22px;
 }
 
-.current-date {
+.current-details {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;

@@ -14,6 +14,7 @@
     <title>Weather App</title>
   </head>
   <body>
+    <div class="weather-app">
     <div class="container border border-info p-3 m-5 rounded"
       style="width:600px">
       <header>
@@ -34,12 +35,18 @@
          />
       </form>
     </header>
-    <div class="current-weather" >
+    <main>
+    <div class="weather-app-data" >
       <h1 class="current-city" id="current-city"> Mafikeng</h1>
-      <h2 class="current-details" id="current-temperature"> ⛅ 25&deg</h2>
+      <div class="current-temperature-weather-container">
+       <div class="current-details" id="current-temperature"> </div>
+        <div class="current-temperature-icon">☀</div>
+        <div class="current-details"> 25</div>
+        <div class="current-temperature-unit"></div>
+    </div>
       <p class="current-date" id="curent-date"> Monday 05:30 October 2023, fair
         <br/>
-        Humidity: 42%, Wind: 24km/h
+        Humidity: <strong>42%</strong>, Wind: <strong>24km/h</strong>
        </p>
     </div>
       <div class="row">
@@ -81,6 +88,7 @@
         </div>
         </div>
       </div>
+    </main>
       <footer>
         <p>
          This project was coded by
@@ -98,6 +106,7 @@
         </p>
       </footer>
     </div>
+  </div>
   </body>
   <script src="src/index.js"></script>
 </html>

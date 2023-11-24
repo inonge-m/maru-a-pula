@@ -62,7 +62,6 @@ main {
 }
 
 .current-temperature-icon {
-  color: rgb(82, 207, 82);
   font-size: 44px;
   margin-top: 22px;
 }
@@ -74,6 +73,7 @@ main {
 }
 
 .current-temperature-unit {
+  color: rgb(82, 207, 82);
   margin-top: 16px;
   font-size: 28px;
 }

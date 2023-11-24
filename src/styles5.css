@@ -62,14 +62,14 @@ main {
 }
 
 .current-temperature-icon {
-  font-size: 88px;
-  margin-left: 88px;
+  font-size: 90px;
+  margin-left: 90px;
 }
 
 .current-temperature {
   color: rgb(110, 131, 110);
-  font-size: 88px;
-  margin-left: 88px;
+  font-size: 90px;
+  margin-left: 90px;
   font-weight: bold;
 }
 

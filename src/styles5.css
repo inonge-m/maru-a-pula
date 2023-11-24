@@ -54,7 +54,7 @@ main {
 }
 
 .current-date strong {
-  color: #77ebc4;
+  color: rgb(78, 158, 158);
 }
 
 .current-temperature-container {
@@ -63,17 +63,18 @@ main {
 
 .current-temperature-icon {
   font-size: 88px;
-  margin-top: 88px;
+  margin-left: 88px;
 }
 
 .current-temperature {
-  color: rgb(82, 207, 82);
+  color: rgb(68, 122, 68);
   font-size: 88px;
   margin-left: 88px;
   font-weight: bold;
 }
 
 .current-temperature-unit {
+  color: rgb(68, 122, 68);
   margin-top: 6px;
   font-size: 28px;
 }

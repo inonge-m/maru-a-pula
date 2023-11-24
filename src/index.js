@@ -49,11 +49,16 @@ let currentDateElement = document.querySelector(".current-date");
 let currentDate = new Date();
 currentDateElement.innerHTML = formatDate(currentDate);
 
-function search(event) {
+function searchHandle(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
-  let city = searchInputElement.value;
+
+  searchCity(searchInputElement.value);
+
   addDate();
+}
+
+function searchCity(city) {
   let apikey = "09te80b3afa4a4a00294o54335b850b6";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
 
@@ -61,13 +66,27 @@ function search(event) {
 }
 
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("submit", searchHandle);
 addDate();
 
 function displayTemperature(response) {
-  let temperatureElement = document.querySelector("#current-temperature");
-  let temperature = Math.round(response.data.temperature.current);
-  let cityElements = document.querySelector("#current-city");
+  let temperatureElement = document.querySelector("#temperature");
+  let temperature = response.data.temperature.current;
+  let cityElements = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+  let humidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+
   cityElements.innerHTML = response.data.city;
-  temperatureElement.innerHTML = temperature;
+  timeElement.innerHTML = formatDate(date);
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
+
+searchCity("Mafikeng");

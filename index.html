@@ -37,17 +37,20 @@
     <main>
     <div class="weather-app-data">
       <div>
-      <h1 class="current-city" id="current-city"> Mafikeng</h1>
+      <h1 class="current-city" id="city"></h1>
       <p class="current-date" id="curent-date">
-         Monday 05:30 October 2023, fair
+        <span id="time"></span>
+          <span id="description"> </span>
         <br/>
-        Humidity: <strong>42%</strong>, Wind: <strong>24km/h</strong>
+        Humidity: <strong id="humidity"></strong>, Wind:
+        <strong id="wind-speed"></strong>
        </p>
       </div>
-       <div class ="current-temperature" id="current-temperature">
-        <div class="current-temperature-icon">☀</div>
-        <div class="current-details" id="current-details">25</div>
+       <div class ="current-temperature-container">
+        <div id="icon"></div>
+        <div class="current-temperature" id="temperature"></div>
         <div class="current-temperature-unit">&degC</div>
+       </div>
     </div>
     </main>
       <div class="row">

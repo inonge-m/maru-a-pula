@@ -62,7 +62,8 @@ main {
 }
 
 .current-temperature-icon {
-  font-size: 50px;
+  width: 88px;
+  height: 88px;
 }
 
 .current-temperature {
@@ -77,11 +78,6 @@ main {
   color: rgb(57, 83, 57);
   margin-top: 6px;
   font-size: 28px;
-}
-
-.row {
-  font-size: 16px;
-  color: green;
 }
 
 .weather-forecast {
@@ -106,7 +102,7 @@ main {
 }
 .weather-forecast-temperatures {
   text-align: center;
-  color: #f65282;
+  color: #52f6b7;
   margin-top: 10px;
   display: flex;
   justify-content: center;
